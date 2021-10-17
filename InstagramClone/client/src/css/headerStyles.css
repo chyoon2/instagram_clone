@@ -1,10 +1,16 @@
 .scales {
-    resize: none;
-    height: 100px;
-    min-width: 515px;
-    max-width: 768px;
-    align-items: center;
+  max-width: 768px; 
 }
-.fonty{
-  color:aliceblue;
+.parent {
+  display: grid;
+  place-items: center; 
+   
 }
+/* .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  
+    height: 60px;
+}  */

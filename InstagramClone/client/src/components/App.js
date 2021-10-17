@@ -14,8 +14,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.matches && <h1>Big Screen</h1>}
-        {!this.state.matches && <h3>Small Screen</h3>}
         <Header />
       </div>
     );
@@ -23,3 +21,5 @@ class App extends React.Component {
 }
 
 export default App;
+// {this.state.matches && <h1>Big Screen</h1>}
+// {!this.state.matches && <h3>Small Screen</h3>}

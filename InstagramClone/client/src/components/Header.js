@@ -6,21 +6,21 @@ import "../css/headerStyles.css";
 
 const Header = () => {
   return (
-    <Segment className='media-query' size={"tiny"}>
-      <div className='scales'>
-        <Grid container columns={3} padded>
-          <Grid.Column>
-            <Image src={InstagramScriptLogo} size={"small"} />
+    <div className='parent'>
+      <Segment className='scales'>
+        <Grid columns={3}>
+          <Grid.Column color={"red"}>
+            <Image src={InstagramScriptLogo} size={"tiny"} />
           </Grid.Column>
           <Grid.Column textAlign='center'>
-            <Input className='icon' icon='search' placeholder='Search...' />
+            <Input placeholder='Search...' />
           </Grid.Column>
           <Grid.Column textAlign='right'>
             <IconMenu />
           </Grid.Column>
         </Grid>
-      </div>
-    </Segment>
+      </Segment>
+    </div>
   );
 };
 export default Header;
