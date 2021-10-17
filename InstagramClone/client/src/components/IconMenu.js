@@ -1,5 +1,7 @@
 import React from "react";
 import { Grid, Image } from "semantic-ui-react";
+import PortfolioPic from "../img/PortfolioPic.jpg";
+import InstagramScriptLogo from "../img/InstagramScriptLogo.png";
 
 const IconMenu = () => {
   return (
@@ -17,7 +19,7 @@ const IconMenu = () => {
         <i className='heart outline icon' />
       </Grid.Column>
       <Grid.Column>
-        <Image src={"PortfolioPic.jpg"} size={"medium"} circular />
+        <Image src={PortfolioPic} size={"medium"} circular />
       </Grid.Column>
     </Grid>
   );
