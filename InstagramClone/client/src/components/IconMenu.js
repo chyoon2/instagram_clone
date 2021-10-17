@@ -1,11 +1,10 @@
 import React from "react";
 import { Grid, Image } from "semantic-ui-react";
 import PortfolioPic from "../img/PortfolioPic.jpg";
-import InstagramScriptLogo from "../img/InstagramScriptLogo.png";
 
 const IconMenu = () => {
   return (
-    <Grid columns='5'>
+    <Grid columns='equal'>
       <Grid.Column textAlign='center'>
         <i className='home icon' />
       </Grid.Column>

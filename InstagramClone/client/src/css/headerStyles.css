@@ -1,0 +1,10 @@
+.scales {
+    resize: none;
+    height: 100px;
+    min-width: 515px;
+    max-width: 768px;
+    align-items: center;
+}
+.fonty{
+  color:aliceblue;
+}
