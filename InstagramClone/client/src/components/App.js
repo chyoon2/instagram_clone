@@ -6,7 +6,6 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        live lifdde love
       </div>
     );
   }
