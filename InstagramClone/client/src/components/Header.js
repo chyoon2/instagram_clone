@@ -6,13 +6,13 @@ const Header = () => {
   return (
     <Segment>
       <Grid columns='equal' padded>
-        <Grid.Column color={"yellow"}>
+        <Grid.Column>
           <Image src={"InstagramScriptLogo.png"} size={"small"} />
         </Grid.Column>
         <Grid.Column textAlign='center'>
           <Input className='icon' icon='search' placeholder='Search...' />
         </Grid.Column>
-        <Grid.Column color={"yellow"} textAlign='right'>
+        <Grid.Column textAlign='right'>
           <IconMenu />
         </Grid.Column>
       </Grid>
