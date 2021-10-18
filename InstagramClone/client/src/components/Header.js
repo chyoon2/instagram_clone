@@ -1,6 +1,5 @@
 import React from "react";
 import IconMenu from "./IconMenu";
-import { Input, Segment } from "semantic-ui-react";
 import igLogo from "../img/lastIg.png";
 import HeaderStylesCSS from "../css/headerStyles.css";
 
@@ -10,26 +9,25 @@ const styles = {
   },
 };
 
-const searchField=()=>{
-  return "Search..."
-}
+const searchField = () => {
+  return "Search...";
+};
 
 const Header = () => {
   return (
-      <div className='grid-container'>
-        <div className='grid-item logo'>
-          <img style={styles.pic} src={igLogo} alt='Logo' />
-        </div>
-
-        <div className='grid-item search'>
-          <input type="text" className='input' placeholder=' Search...'  />
-
-        </div>
-
-        <div className='grid-item iconMenu'>
-          <IconMenu />
-        </div>
+    <div className='grid-container'>
+      <div className='grid-item logo'>
+        <img style={styles.pic} src={igLogo} alt='Logo' />
       </div>
+
+      <div className='grid-item search'>
+        <input type='text' className='input' placeholder=' Search...' />
+      </div>
+
+      <div className='grid-item iconMenu'>
+        <IconMenu />
+      </div>
+    </div>
   );
 };
 export default Header;

@@ -4,8 +4,8 @@ import "../css/headerStyles.css";
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
+      <div style={{ backgroundColor: "blue" }}>
+        <Header style={{ backgroundColor: "blue" }} />
       </div>
     );
   }

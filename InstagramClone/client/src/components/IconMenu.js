@@ -1,28 +1,27 @@
 import React from "react";
-import tinypic from "../img/tinypic.jpg";
+import tinypic from "../img/newUserPic.jpg";
 import IconMenuCSS from "../css/IconMenu.css";
 const styles = {
-  circle: {  borderRadius: "10px",
-},
+  circle: { borderRadius: "10px" },
 };
 
 const IconMenu = () => {
   return (
     <div className='bling'>
       <div className='item home'>
-        <i className='home icon' />
+        <i className='fas fa-home fa-lg' />
       </div>
 
       <div className='item msg'>
-        <i className='facebook messenger icon' />
+        <i className='fab fa-facebook-messenger fa-lg' />
       </div>
 
       <div className='item compass'>
-        <i className='compass icon' />
+        <i className='fas fa-compass fa-lg' />
       </div>
 
       <div className='item heart'>
-        <i className='heart outline icon' />
+        <i class='far fa-heart fa-lg' />
       </div>
 
       <div className='pic'>
