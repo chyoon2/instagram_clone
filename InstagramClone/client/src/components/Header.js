@@ -1,26 +1,35 @@
 import React from "react";
 import IconMenu from "./IconMenu";
-import { Input, Segment, Grid, Image, Container } from "semantic-ui-react";
-import Logo from "../img/IgLogoSmall.png";
-import "../css/headerStyles.css";
+import { Input, Segment } from "semantic-ui-react";
+import igLogo from "../img/lastIg.png";
+import HeaderStylesCSS from "../css/headerStyles.css";
+
+const styles = {
+  pic: {
+    minWidth: "50px",
+  },
+};
+
+const searchField=()=>{
+  return "Search..."
+}
 
 const Header = () => {
   return (
-    <div className='outer'>
-      <div className='grid-contaner'>
-        <div className='grid-item grid-item logo'>
-          <img src={Logo} alt='Logo' />
+      <div className='grid-container'>
+        <div className='grid-item logo'>
+          <img style={styles.pic} src={igLogo} alt='Logo' />
         </div>
 
-        <div className='grid-item grid-item search'>
-          <Input placeholder='Search...' />
+        <div className='grid-item search'>
+          <input type="text" className='input' placeholder=' Search...'  />
+
         </div>
 
-        <div className='grid-item grid-item iconMenu'>
+        <div className='grid-item iconMenu'>
           <IconMenu />
         </div>
       </div>
-    </div>
   );
 };
 export default Header;

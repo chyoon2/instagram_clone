@@ -1,0 +1,21 @@
+.bling {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 4px
+}
+.item {
+}
+.home {
+}
+.compass {
+}
+.msg {
+}
+.heart{
+}
+.pic {
+  padding-top:2px;
+}

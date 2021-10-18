@@ -1,50 +1,69 @@
+/* WHEN SMALL */
 @media only screen and (max-width: 760px) {
-  .grid-contaner{
+  .grid-container{
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
     text-align: center;
     display:grid;
     justify-content: center;
     justify-items: center;
+    gap: 30px; 
+    background-color: black;
   }
-  img {
-    min-width: 50px;
-  }
+  /* changed gap from 15 to 30 */
   .logo{
-    background-color: blue;
     justify-content: center;
     text-align: center;
     min-width: 130px;
     max-width: 200px;
     justify-items: center;
-
+    background-color: green;
   }
   .iconMenu{
-    padding-top: 10px;
+    padding-top: 13px;
     min-width: 130px;
     max-width: 200px;
-    background-color: green;
     text-align: center;
     justify-content: center;
     justify-items: center;
-
+    background-color: yellow;
   }
   .search{
-    background-color: pink;
     text-align: center;
     min-width: 130px;
     max-width: 200px;
     justify-content: center;
     justify-items: center;
     text-align: center;
+    background-color: red;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .input{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    height: 10px;
+    width: 150px;
+    font-size: 11px;
+    outline: none;
 
   }
-  body {
-    background-color: yellow;
-    }
+  input:focus::placeholder { color:transparent}
+  input::placeholder { color:#222; transition:color 0.3s ease; }
+
 }
+/* WHEN BIG */
 @media only screen and (min-width: 760px) {
-  .grid-contaner{
+  .grid-container{
     grid-template-columns: auto auto auto;
     padding-top: 10px;
     text-align: center;
@@ -53,39 +72,27 @@
     justify-items: center;
     gap:95px;
   }
-  body {
-    background-color: red;
-    }
-  img {
-    min-width: 50px;
-  }
   .logo{
-    background-color:blue;
     justify-content: center;
     text-align: center;
     min-width: 130px;
     max-width: 200px;
-    justify-items: center;
-  
+    justify-items: center; 
   }
   .iconMenu{
-    padding-top: 10px;
+    padding-top: 13px;
     min-width: 130px;
     max-width: 200px;
-    background-color: green;
     text-align: center;
     justify-content: center;
     justify-items: center;
-  
   }
   .search{
-    background-color: pink;
     text-align: center;
     min-width: 130px;
     max-width: 200px;
     justify-content: center;
     justify-items: center;
     text-align: center;
-  
   }
 }
