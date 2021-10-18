@@ -6,7 +6,7 @@ import "../css/headerStyles.css";
 
 const Header = () => {
   return (
-    <div className='ui container'>
+    <div className='outer'>
       <div className='grid-contaner'>
         <div className='grid-item grid-item logo'>
           <img src={Logo} alt='Logo' />
