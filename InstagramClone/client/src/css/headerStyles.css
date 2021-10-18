@@ -1,39 +1,42 @@
-.outer{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.grid-contaner{
-  display:grid;
-  grid-template-columns: auto auto auto;
-  padding-top: 10px;
 
-  gap:40px;
+.grid-contaner{
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10px;
+  text-align: center;
+  display:grid;
   justify-content: center;
+  justify-items: center;
 }
 img {
   min-width: 50px;
 }
 .logo{
   background-color:yellow;
+  justify-content: center;
   text-align: center;
-  min-width: 200px;
+  min-width: 130px;
+  max-width: 200px;
+  justify-items: center;
+
 }
 .iconMenu{
   padding-top: 10px;
-  min-width: 200px;
+  min-width: 130px;
+  max-width: 200px;
   background-color: green;
   text-align: center;
+  justify-content: center;
+  justify-items: center;
+
 }
 .search{
   background-color: pink;
   text-align: center;
+  min-width: 130px;
+  max-width: 200px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
 
 }
 
-@media only screen and (max-width: 760px) {
-  body {
-	background-color: red;
-  }
- 
-  
-}
