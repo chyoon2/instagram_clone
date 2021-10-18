@@ -15,7 +15,7 @@ const searchField = () => {
 
 const Header = () => {
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div className='Container' style={{ backgroundColor: "white" }}>
       <div className='grid-container'>
         <div className='grid-item logo'>
           <img style={styles.pic} src={igLogo} alt='Logo' />
