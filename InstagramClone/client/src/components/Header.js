@@ -1,22 +1,24 @@
 import React from "react";
 import IconMenu from "./IconMenu";
 import { Input, Segment, Grid, Image, Container } from "semantic-ui-react";
-import InstagramScriptLogo from "../img/InstagramScriptLogo.png";
+import Logo from "../img/IgLogoSmall.png";
 import "../css/headerStyles.css";
 
 const Header = () => {
   return (
-    <div className='grid-contaner'>
-      <div className='grid-item grid-item logo'>
-        <img src={InstagramScriptLogo} alt='Logo' />
-      </div>
+    <div className='ui container'>
+      <div className='grid-contaner'>
+        <div className='grid-item grid-item logo'>
+          <img src={Logo} alt='Logo' />
+        </div>
 
-      <div className='grid-item grid-item search'>
-        <Input placeholder='Search...' />
-      </div>
+        <div className='grid-item grid-item search'>
+          <Input placeholder='Search...' />
+        </div>
 
-      <div className='grid-item grid-item iconMenu'>
-        <IconMenu />
+        <div className='grid-item grid-item iconMenu'>
+          <IconMenu />
+        </div>
       </div>
     </div>
   );
