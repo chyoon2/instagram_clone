@@ -15,17 +15,19 @@ const searchField = () => {
 
 const Header = () => {
   return (
-    <div className='grid-container'>
-      <div className='grid-item logo'>
-        <img style={styles.pic} src={igLogo} alt='Logo' />
-      </div>
+    <div style={{ backgroundColor: "white" }}>
+      <div className='grid-container'>
+        <div className='grid-item logo'>
+          <img style={styles.pic} src={igLogo} alt='Logo' />
+        </div>
 
-      <div className='grid-item search'>
-        <input type='text' className='input' placeholder=' Search...' />
-      </div>
+        <div className='grid-item search'>
+          <input type='text' className='input' placeholder=' Search...' />
+        </div>
 
-      <div className='grid-item iconMenu'>
-        <IconMenu />
+        <div className='grid-item iconMenu'>
+          <IconMenu />
+        </div>
       </div>
     </div>
   );

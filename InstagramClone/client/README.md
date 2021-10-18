@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##
+## Refactors
+
+- make header component responsive to browser window > 400px so search bar dissapears.
 
 ## Specifications
 
