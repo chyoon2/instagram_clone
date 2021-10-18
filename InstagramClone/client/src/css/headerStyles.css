@@ -14,3 +14,19 @@
   
     height: 60px;
 }  */
+.grid-contaner{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+  grid-gap: 70px;
+}
+
+img {
+  border-radius: 8px;
+  max-width: 50px;
+  height: auto;
+}
+
