@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../css/Carousel.css";
-import { avatar } from "../api/faker";
-import CarouselItem from "./CarouselItems";
+import { avatar } from "./CarouselItems";
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
