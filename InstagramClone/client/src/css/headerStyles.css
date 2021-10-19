@@ -8,17 +8,17 @@
     justify-items: center;
     gap: 30px; 
   }
-.Container{
-  border-color:#d6d6d6	;
-  border-width: .5px;
-  border-style: solid;
-  border-left:none;
-  border-right:none;
-  border-top:none;
-  /* TOP & BOTTOM: 5px, LEFT & RIGHT: 20px */
-  border-width: 1px ;
-  /* OR - TOP: 5px, RIGHT: 20px, BOTTOM: 10px, LEFT: 15px */
-}
+  .Container{
+    border-color:#d6d6d6	;
+    border-width: .5px;
+    border-style: solid;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    /* TOP & BOTTOM: 5px, LEFT & RIGHT: 20px */
+    border-width: 1px ;
+    /* OR - TOP: 5px, RIGHT: 20px, BOTTOM: 10px, LEFT: 15px */
+  }
   .grid-item{
     justify-content: center;
     text-align: center;
@@ -29,23 +29,16 @@
     min-width: 130px;
     max-width: 200px;
     justify-items: center;
-   
   }
   .iconMenu{
     padding-top: 10px;
     min-width: 130px;
     max-width: 200px;
-    /* text-align: center;
-    justify-content: center;
-    justify-items: center; */
-    
   }
   .search{
     min-width: 130px;
     max-width: 200px;
-
   }
-  
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -69,7 +62,6 @@
   }
   input:focus::placeholder { color:transparent}
   input::placeholder { color:rgb(59, 59, 59); transition:color 0.3s ease; }
-
 }
 /* WHEN BIG */
 @media only screen and (min-width: 760px) {
@@ -101,8 +93,6 @@
   .logo{
     min-width: 130px;
     max-width: 200px;
-    
-
   }
   .iconMenu{
     padding-top: 10px;

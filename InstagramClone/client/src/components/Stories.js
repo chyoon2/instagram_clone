@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/StoriesStyles.css";
 import userpic from "../img/TheUserPic.jpg";
-import CarouselItems from "./CarouselItems";
+import Carousely from "./Carousely";
 
 const styles = {
   circle: { borderRadius: "15px" },
@@ -9,7 +9,7 @@ const styles = {
 
 const Stories = () => (
   <div className='Stories-Container'>
-    <CarouselItems />
+    <Carousely />
   </div>
 );
 
