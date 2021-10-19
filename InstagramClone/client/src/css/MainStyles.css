@@ -1,6 +1,6 @@
-/* .main-container{
+.main-container{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100px;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -16,9 +16,6 @@
   justify-content: center;
   justify-items: center;
   background-color: white;
-  min-height: 100;
-  min-width: 100;
-  
 }
 .item-posts{
   border-color:#d6d6d6	;
@@ -29,23 +26,4 @@
   justify-content: center;
   justify-items: center;
   background-color: white;
-  min-height: 100;
-  min-width: 100;
 }
-.item-caro{
-  padding-top: 30px;
-  min-height: 100px;
-  min-width: 100px;
-  background-color:hotpink;
-  
-} */
-.carsel{
- margin: 10px;
- border-color:#d6d6d6	;
- border-width: 1px;
- border-style: solid; 
- border-radius: 3px;
-  min-height: 200px;
-  min-width: 100px;
-  background-color:white;
-} 

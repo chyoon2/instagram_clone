@@ -1,12 +1,14 @@
 import React from "react";
 import Header from "./Header";
 import Main from "./Main";
+import Carousely from "./Carousely";
 
 class App extends React.Component {
   render() {
     return (
       <div className='container' style={{ backgroundColor: "#f2f2f2" }}>
         <Header />
+        <Carousely />
         <Main />
       </div>
     );

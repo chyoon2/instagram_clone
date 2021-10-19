@@ -71,7 +71,7 @@
     display:grid;
     justify-content: center;
     justify-items: center;
-    gap:95px;
+    gap:200px;
   }
   .Container{
     border-color:#d6d6d6	;

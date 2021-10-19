@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import "../css/Carousel.css";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -40,7 +40,6 @@ const Carousely = () => {
         <i class='far fa-heart fa-7x' />
       </div>
       <div>
-        {" "}
         <i class='far fa-heart fa-7x' />
       </div>
       <div>Item 3</div>
@@ -56,10 +55,6 @@ const Carousely = () => {
         {" "}
         <i class='far fa-heart fa-7x' />
       </div>
-      <div>Item 1</div>
-      <div>Item 2</div>
-      <div>Item 3</div>
-      <div>Item 4</div>
     </Carousel>
   );
 };
