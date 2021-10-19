@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../css/Carousel.css";
 import { avatar } from "./CarouselItems";
+import Loading from "./Loading";
 
 const responsive = {
   superLargeDesktop: {
@@ -26,7 +27,8 @@ const responsive = {
     slidesToSlide: 1, // optional, default to 1.
   },
 };
-const Carousely = () => {
+renderContent = () => {};
+  const renderCarousel = () => {}
   return (
     <Carousel
       className='carsel'
@@ -51,6 +53,10 @@ const Carousely = () => {
       {avatar()}
     </Carousel>
   );
+};
+
+const Carousely = () => {
+  return <>{renderContent()}</>;
 };
 //REFACTOR WHEN USING AN API/DB OTHER THAN FAKER
 

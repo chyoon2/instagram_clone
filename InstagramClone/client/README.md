@@ -14,6 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - faker
 - react-multi-carousel
+- loading
 
 #### Header Component
 
