@@ -1,14 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import "../css/headerStyles.css";
-import Stories from "./Stories";
+import Main from "./Main";
 
 class App extends React.Component {
   render() {
     return (
       <div className='container' style={{ backgroundColor: "#f2f2f2" }}>
         <Header />
-        <Stories />
+        <Main />
       </div>
     );
   }

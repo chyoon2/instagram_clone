@@ -1,7 +1,7 @@
 import React from "react";
 import IconMenu from "./IconMenu";
 import igLogo from "../img/lastIg.png";
-import HeaderStylesCSS from "../css/headerStyles.css";
+import "../css/HeaderStyles.css";
 
 const styles = {
   pic: {
@@ -9,14 +9,10 @@ const styles = {
   },
 };
 
-const searchField = () => {
-  return "Search...";
-};
-
 const Header = () => {
   return (
-    <div className='Container' style={{ backgroundColor: "white" }}>
-      <div className='grid-container'>
+    <div className='Container'>
+      <div className='grid-container' style={{ backgroundColor: "white" }}>
         <div className='grid-item logo'>
           <img style={styles.pic} src={igLogo} alt='Logo' />
         </div>
@@ -24,7 +20,6 @@ const Header = () => {
         <div className='grid-item search'>
           <input type='text' className='input' placeholder=' Search...' />
         </div>
-
         <div className='grid-item iconMenu'>
           <IconMenu />
         </div>
