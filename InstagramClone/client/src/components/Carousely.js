@@ -34,26 +34,30 @@ const Carousely = () => {
       responsive={responsive}
       ssr={true} // means to render carousel on server-side.
       containerClass='carousel-container'
-      itemClass='carousel-item-padding-10-px'>
-      <div>
-        {" "}
-        <i class='far fa-heart fa-7x' />
+      itemClass='carousel-item-padding-0-px'>
+      <div className='inner-ends'>
+        <i className='finally' class='far fa-heart fa-3x' />
       </div>
-      <div>
-        <i class='far fa-heart fa-7x' />
+      <div className='inner'>
+        <i class='far fa-heart fa-3x' />
       </div>
-      <div>Item 3</div>
-      <div>Item 4</div>
-      <div>Item 1</div>
-      <div>
-        <i class='far fa-heart fa-7x' />
+      <div className='inner'>
+        <i class='far fa-heart fa-3x' />
       </div>
-      <div>
-        <i class='far fa-heart fa-7x' />
+      <div className='inner'>
+        <i class='far fa-heart fa-3x' />
       </div>
-      <div>
-        {" "}
-        <i class='far fa-heart fa-7x' />
+      <div className='inner'>
+        <i class='far fa-heart fa-3x' />
+      </div>
+      <div className='inner'>
+        <i class='far fa-heart fa-3x' />
+      </div>
+      <div className='inner'>
+        <i class='far fa-heart fa-3x' />
+      </div>
+      <div className='inner'>
+        <i class='far fa-heart fa-3x' />
       </div>
     </Carousel>
   );
