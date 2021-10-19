@@ -2,16 +2,12 @@ import React from "react";
 import Stories from "./Stories";
 import Posts from "./Posts";
 import "../css/MainStyles.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Carousely from "./Carousely";
 
-const Main = () => (
-  <div className='main-container'>
-    <div className='item-stories'>
-      <Stories />
-    </div>
-    <div className='item-posts'>
-      <Posts />
-    </div>
-  </div>
-);
+const Main = () => {
+  return <Carousely />;
+};
 
 export default Main;
