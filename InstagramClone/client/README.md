@@ -10,6 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - User can use a header component:
 
+## Specifications
+
+- faker
+- react-multi-carousel
+
 #### Header Component
 
 The Header Component that has a **search bar**, **Home icon**, **messenger icon**, **compass icon**, a **heart icon**, and a **custom user image** icon.

@@ -2,6 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../css/Carousel.css";
+import { avatar } from "../api/faker";
+import CarouselItem from "./CarouselItems";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -35,32 +37,21 @@ const Carousely = () => {
       ssr={true} // means to render carousel on server-side.
       containerClass='carousel-container'
       itemClass='carousel-item-padding-0-px'>
-      <div className='inner-ends'>
-        <i className='finally' class='far fa-heart fa-3x' />
-      </div>
-      <div className='inner'>
-        <i class='far fa-heart fa-3x' />
-      </div>
-      <div className='inner'>
-        <i class='far fa-heart fa-3x' />
-      </div>
-      <div className='inner'>
-        <i class='far fa-heart fa-3x' />
-      </div>
-      <div className='inner'>
-        <i class='far fa-heart fa-3x' />
-      </div>
-      <div className='inner'>
-        <i class='far fa-heart fa-3x' />
-      </div>
-      <div className='inner'>
-        <i class='far fa-heart fa-3x' />
-      </div>
-      <div className='inner'>
-        <i class='far fa-heart fa-3x' />
-      </div>
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
+      {avatar()}
     </Carousel>
   );
 };
+//REFACTOR WHEN USING AN API/DB OTHER THAN FAKER
 
 export default Carousely;

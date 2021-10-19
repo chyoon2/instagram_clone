@@ -1,7 +1,6 @@
 import React from "react";
 import Posts from "./Posts";
 import "../css/MainStyles.css";
-import Carousely from "./Carousely";
 
 const Main = () => {
   return (
