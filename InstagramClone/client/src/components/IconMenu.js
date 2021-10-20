@@ -19,7 +19,7 @@ const IconMenu = () => {
         <i className='fas fa-compass fa-2x' />
       </div>
       <div className='item heart'>
-        <i class='far fa-heart fa-2x' />
+        <i className='far fa-heart fa-2x' />
       </div>
       <div className='pic'>
         <img style={styles.circle} src={tinypic} alt='profile' />

@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../css/Carousel.css";
-import { avatar } from "./CarouselItems";
-import Loading from "./Loading";
+import CarouselItems from "./CarouselItems";
+import faker from "faker";
 
 const responsive = {
   superLargeDesktop: {
@@ -27,8 +27,8 @@ const responsive = {
     slidesToSlide: 1, // optional, default to 1.
   },
 };
-renderContent = () => {};
-  const renderCarousel = () => {}
+
+const Carousely = () => {
   return (
     <Carousel
       className='carsel'
@@ -39,24 +39,9 @@ renderContent = () => {};
       ssr={true} // means to render carousel on server-side.
       containerClass='carousel-container'
       itemClass='carousel-item-padding-0-px'>
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
-      {avatar()}
+      {CarouselItems()}
     </Carousel>
   );
-};
-
-const Carousely = () => {
-  return <>{renderContent()}</>;
 };
 //REFACTOR WHEN USING AN API/DB OTHER THAN FAKER
 
