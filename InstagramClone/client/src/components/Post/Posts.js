@@ -1,5 +1,4 @@
 import React from "react";
-import faker from "faker";
 import PostHeader from "./PostHeader";
 import PostInfo from "./PostInfo";
 import PostImage from "./PostImage";
@@ -20,33 +19,43 @@ const Posts = () => {
       <div className='post-header'>
         <PostHeader />
       </div>
+
       <div className='post-info'>
         <PostInfo />
       </div>
+
       <div className='post-image'>
         <PostImage />
       </div>
+
       <div className='post-engage'>
         <PostEngage />
       </div>
+
       <div className='post-bookmark'>
         <PostBookmark />
       </div>
+
       <div className='post-view-views'>
         <PostViews />
       </div>
+
       <div className='post-Caption'>
         <PostCaption />
       </div>
+
       <div className='post-comments'>
         <PostComments />
       </div>
+
       <div className='post-like'>
         <PostLikes />
       </div>
+
       <div className='post-time'>
         <PostTime />
       </div>
+
       <div className='post-addComment'>
         <PostAddComment />
       </div>
