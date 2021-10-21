@@ -1,4 +1,6 @@
 import React from "react";
+import faker from "faker";
+import "../../css/Posts.css";
 
 const Posts = () => {
   return (

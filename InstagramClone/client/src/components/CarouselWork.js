@@ -1,6 +1,5 @@
 import faker from "faker";
 import "../css/Carousel.css";
-import Loading from "./Loading";
 import { data } from "../data";
 import CarouselDisplay from "./CarouselDisplay";
 
@@ -15,7 +14,6 @@ const CarouselWork = () => {
   return (
     <div>
       <CarouselDisplay data={FakerArray} />
-      <Loading />
     </div>
   );
   // useEffect(() => {
