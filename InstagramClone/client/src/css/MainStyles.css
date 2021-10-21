@@ -26,4 +26,5 @@
   justify-content: center;
   justify-items: center;
   background-color: white;
+  min-width: 643px;
 }

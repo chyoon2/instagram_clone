@@ -5,8 +5,76 @@
   border-radius: 3px;
   background-color:white;
   margin: auto;
-  width: 600px;
   max-height: 118px;
   min-height: 118px;
-  margin-top: 30px;
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-rows: 64px, 480px, 64px, 32px 32px, auto, 32px 64px;
+  grid-template-areas: 
+  "header info" 
+  "image image" 
+  "engage bookmark"
+  "views views"
+  "caption caption"
+  "comments likes"
+  "time time"
+  "addComment addComment";
 } 
+.post-header{
+  grid-area: header;
+  background-color: red;
+}
+.post-info{
+  grid-area: info;
+  background-color:green;
+} 
+.post-image{
+  grid-area: image;
+  background-color:hotpink;
+}
+.post-engage{
+  grid-area: engage;
+  background-color: purple;
+}
+.post-bookmark{
+  grid-area: bookmark;
+  background-color: yellow;
+}
+.post-views{
+  grid-area: views;
+  background-color: blue;
+}
+.post-caption{
+  grid-area: caption;
+  background-color: hotpink;
+}
+.post-comments{
+  grid-area: comments;
+  background-color:  darkgray;
+}
+.post-likes{
+grid-area: likes;
+background-color: yellow;
+}
+.post-time{
+grid-area: time;
+background-color: blue;
+}
+.post-addComment{
+grid-area: addComment;
+background-color: purple;
+}
+
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+  justify-content: right;
+  justify-items: right;
+  align-items: right;
+  align-content: right;
+}
+.name{
+  float: right;
+}

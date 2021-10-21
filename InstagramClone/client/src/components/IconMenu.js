@@ -1,9 +1,10 @@
 import React from "react";
 import tinypic from "../img/TheUserPic.jpg";
 import "../css/IconMenuStyles.css";
+import faker from "faker";
 
 const styles = {
-  circle: { borderRadius: "15px" },
+  circle: { borderRadius: "20px", maxWidth: "30px", maxHeight: "30px" },
 };
 
 const IconMenu = () => {
@@ -22,7 +23,7 @@ const IconMenu = () => {
         <i className='far fa-heart fa-2x' />
       </div>
       <div className='pic'>
-        <img style={styles.circle} src={tinypic} alt='profile' />
+        <img style={styles.circle} alt='image' src={faker.image.avatar()} />
       </div>
     </div>
   );
