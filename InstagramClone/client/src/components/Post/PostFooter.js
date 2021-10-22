@@ -1,5 +1,6 @@
 import React from "react";
-import faker from "faker";
+// import faker from "faker";
+import { timeArr } from "../../data";
 
 const PostFooter = ({ type }) => {
   function getNum() {
@@ -15,20 +16,6 @@ const PostFooter = ({ type }) => {
   }
   function getTime() {
     const num = Math.floor(Math.random() * 11);
-    const timeArr = [
-      "8 HOURS AGO",
-      "10 HOURS AGO",
-      "14 HOURS AGO",
-      "12 HOURS AGO",
-      "2 HOURS AGO",
-      "3 HOURS AGO",
-      "4 HOURS AGO",
-      "1 DAY AGO",
-      "2 DAYS AGO",
-      "6 HOURS AGO",
-      "5 HOURS AGO",
-      "11 HOURS AGO",
-    ];
     return timeArr[num];
   }
 
@@ -49,7 +36,15 @@ const PostFooter = ({ type }) => {
   }
   return (
     <div style={{ float: "left" }}>
-      <p style={{ float: "left" }}>{renderContent(type)}</p>
+      <p
+        style={{
+          float: "left",
+          paddingLeft: "10px",
+          paddingTop: "3px",
+          paddingBottom: "3px",
+        }}>
+        {renderContent(type)}
+      </p>
     </div>
   );
 };

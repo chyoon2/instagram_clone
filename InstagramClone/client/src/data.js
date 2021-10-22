@@ -42,14 +42,14 @@ export const userData = [
     id: 4,
     name: "averagestudent",
     avatar: "https://cdn.fakercloud.com/avatars/deviljho__128.jpg",
-    jpeg: "http://placeimg.com/640/480/nature",
+    jpeg: "http://placeimg.com/640/480/abstract",
     caption: "Even the stars were jealous of the sparkle in her eyes",
   },
   {
     id: 5,
     name: "BadKarma",
     avatar: "https://cdn.fakercloud.com/avatars/michigangraham_128.jpg",
-    jpeg: "http://placeimg.com/640/480/nightlife",
+    jpeg: "http://placeimg.com/640/480/lorempixel",
     caption: "I’m not high maintenance, you’re just low effort",
   },
   {
@@ -122,6 +122,20 @@ export const userData = [
     jpeg: "http://placeimg.com/640/480/people",
     caption: "But first, let me take a selfie",
   },
+];
+export const timeArr = [
+  "8 HOURS AGO",
+  "10 HOURS AGO",
+  "14 HOURS AGO",
+  "12 HOURS AGO",
+  "2 HOURS AGO",
+  "3 HOURS AGO",
+  "4 HOURS AGO",
+  "1 DAY AGO",
+  "2 DAYS AGO",
+  "6 HOURS AGO",
+  "5 HOURS AGO",
+  "11 HOURS AGO",
 ];
 
 // Vodka may not be the answer but it’s worth a shot

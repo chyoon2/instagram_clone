@@ -3,7 +3,7 @@ import PostHeader from "./PostHeader";
 import PostInfo from "./PostInfo";
 import PostImage from "./PostImage";
 import PostEngage from "./PostEngage.js";
-import PostComments from "./PostComments";
+// import PostComments from "./PostComments";
 import PostFooter from "./PostFooter";
 import PostAddComment from "./PostAddComment";
 import "../../css/Posts.css";
