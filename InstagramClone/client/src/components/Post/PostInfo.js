@@ -6,8 +6,8 @@ const style = {
     marginRight: "auto",
   },
 };
-const PostInfo = ({ icon }) => {
-  const displayIcon = `${icon} fa-2x`;
+const PostInfo = ({ icon, size }) => {
+  const displayIcon = `${icon} + ${size}`;
 
   return <i style={style.image} className={displayIcon} />;
 };

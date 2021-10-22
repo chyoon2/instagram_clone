@@ -25,14 +25,14 @@ const styles = {
   },
 };
 
-const PostHeader = () => {
+const PostHeader = ({ data }) => {
   return (
     <div style={styles.container}>
       <div>
-        <img style={styles.circle} alt='user' src={faker.image.avatar()} />
+        <img style={styles.circle} alt='user' src={data.avatar} />
       </div>
       <div style={styles.userName}>
-        <span style={styles.span}>{faker.name.firstName()}</span>
+        <span style={styles.span}>{data.name}</span>
       </div>
     </div>
   );

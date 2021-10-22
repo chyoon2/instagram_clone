@@ -1,11 +1,12 @@
 import React from "react";
 import faker from "faker";
 import "../../css/Posts.css";
+import { data } from "../../data";
 
-const PostImage = () => {
+const PostImage = ({ data }) => {
   return (
     <div>
-      <img alt='post' src={faker.image.nature()} />
+      <img alt='post' src={data.jpeg} />
     </div>
   );
 };

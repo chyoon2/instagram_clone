@@ -7,7 +7,7 @@ const CarouselWork = () => {
   const FakerArray = data.map((key) => ({
     id: key.id,
     name: faker.name.firstName(),
-    jpeg: faker.image.avatar(),
+    ava: faker.image.avatar(),
   }));
   console.log(FakerArray);
 

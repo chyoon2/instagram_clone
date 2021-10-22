@@ -29,7 +29,7 @@
 } 
 .post-image{
   grid-area: image;
-  background-color:red;
+  background-color:white;
 }
 .post-engage{
   grid-area: engage;
@@ -42,7 +42,7 @@
 }
 .post-views{
   grid-area: views;
-  background-color:red;
+  background-color:white;
 }
 .post-caption{
   grid-area: caption;

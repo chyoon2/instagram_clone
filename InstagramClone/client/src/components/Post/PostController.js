@@ -8,11 +8,11 @@ import PostFooter from "./PostFooter";
 import PostAddComment from "./PostAddComment";
 import "../../css/Posts.css";
 
-const PostController = () => {
+const PostController = ({ data }) => {
   return (
     <div className='post-container'>
       <div className='post-header'>
-        <PostHeader />
+        <PostHeader data={data} />
       </div>
 
       <div className='post-info'>
@@ -20,7 +20,7 @@ const PostController = () => {
       </div>
 
       <div className='post-image'>
-        <PostImage />
+        <PostImage data={data} />
       </div>
 
       <div className='post-engage'>
@@ -28,7 +28,7 @@ const PostController = () => {
       </div>
 
       <div className='post-bookmark'>
-        <PostInfo icon={"far fa-bookmark"} />
+        <PostInfo icon={"far fa-bookmark"} size={"fa-2x"} />
       </div>
 
       <div className='footer post-views'>

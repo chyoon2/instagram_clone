@@ -40,21 +40,21 @@ const CarouselDisplay = ({ data }) => {
       ssr={true} // means to render carousel on server-side.
       containerClass='carousel-container'
       itemClass='carousel-item-padding-0-px'>
-      <CarouselItems Name={data[0].name} Pic={data[0].jpeg} />
-      <CarouselItems Name={data[1].name} Pic={data[1].jpeg} />
-      <CarouselItems Name={data[2].name} Pic={data[2].jpeg} />
-      <CarouselItems Name={data[3].name} Pic={data[3].jpeg} />
-      <CarouselItems Name={data[4].name} Pic={data[4].jpeg} />
-      <CarouselItems Name={data[5].name} Pic={data[5].jpeg} />
-      <CarouselItems Name={data[6].name} Pic={data[6].jpeg} />
-      <CarouselItems Name={data[7].name} Pic={data[7].jpeg} />
-      <CarouselItems Name={data[8].name} Pic={data[8].jpeg} />
-      <CarouselItems Name={data[9].name} Pic={data[9].jpeg} />
-      <CarouselItems Name={data[10].name} Pic={data[10].jpeg} />
-      <CarouselItems Name={data[11].name} Pic={data[11].jpeg} />
-      <CarouselItems Name={data[12].name} Pic={data[12].jpeg} />
-      <CarouselItems Name={data[13].name} Pic={data[13].jpeg} />
-      <CarouselItems Name={data[14].name} Pic={data[14].jpeg} />
+      <CarouselItems Name={data[0].name} Pic={data[0].ava} />
+      <CarouselItems Name={data[1].name} Pic={data[1].ava} />
+      <CarouselItems Name={data[2].name} Pic={data[2].ava} />
+      <CarouselItems Name={data[3].name} Pic={data[3].ava} />
+      <CarouselItems Name={data[4].name} Pic={data[4].ava} />
+      <CarouselItems Name={data[5].name} Pic={data[5].ava} />
+      <CarouselItems Name={data[6].name} Pic={data[6].ava} />
+      <CarouselItems Name={data[7].name} Pic={data[7].ava} />
+      <CarouselItems Name={data[8].name} Pic={data[8].ava} />
+      <CarouselItems Name={data[9].name} Pic={data[9].ava} />
+      <CarouselItems Name={data[10].name} Pic={data[10].ava} />
+      <CarouselItems Name={data[11].name} Pic={data[11].ava} />
+      <CarouselItems Name={data[12].name} Pic={data[12].ava} />
+      <CarouselItems Name={data[13].name} Pic={data[13].ava} />
+      <CarouselItems Name={data[14].name} Pic={data[14].ava} />
     </Carousel>
   );
 };
