@@ -11,7 +11,7 @@ const CarouselWork = () => {
   }));
 
   return (
-    <div>
+    <div style={{ marginBottom: "30px" }}>
       <CarouselDisplay data={FakerArray} />
     </div>
   );

@@ -18,7 +18,11 @@ const Header = () => {
         </div>
 
         <div className='grid-item search'>
-          <input type='text' className='input' placeholder=' Search...' />
+          <input
+            type='text'
+            className='input header'
+            placeholder=' Search...'
+          />
         </div>
         <div className='grid-item iconMenu'>
           <IconMenu />

@@ -3,14 +3,13 @@ import PostHeader from "./PostHeader";
 import PostInfo from "./PostInfo";
 import PostImage from "./PostImage";
 import PostEngage from "./PostEngage.js";
-// import PostComments from "./PostComments";
-import PostFooter from "./PostFooter";
 import PostAddComment from "./PostAddComment";
+import PostFooter from "./PostFooter";
 import "../../css/Posts.css";
 
 const PostController = ({ data, commentData }) => {
   return (
-    <div className='post-container'>
+    <div className='post-container' style={{ marginBottom: "30px" }}>
       <div className='post-header'>
         <PostHeader data={data} />
       </div>

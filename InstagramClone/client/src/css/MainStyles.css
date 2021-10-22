@@ -15,16 +15,11 @@
   text-align: center;
   justify-content: center;
   justify-items: center;
-  background-color: white;
 }
 .item-posts{
-  border-color:#d6d6d6	;
-  border-width: .5px;
-  border-style: solid; 
   align-items: center;
   text-align: center;
   justify-content: center;
   justify-items: center;
-  background-color: white;
   min-width: 643px;
 }
