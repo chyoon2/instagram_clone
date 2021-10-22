@@ -1,5 +1,5 @@
 import React from "react";
-import Posts from "./Post/Posts";
+import PostController from "./Post/PostController";
 import "../css/MainStyles.css";
 
 const Main = () => {
@@ -7,7 +7,7 @@ const Main = () => {
     <div className='main-container'>
       <div className='item-stories'></div>
       <div className='item-posts'>
-        <Posts />
+        <PostController />
       </div>
     </div>
   );

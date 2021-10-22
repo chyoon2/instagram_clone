@@ -18,12 +18,7 @@ const styles = {
     paddingTop: "15px",
     paddingRight: "500px",
   },
-  // userDiv: {
-  //   justifyContent: "left",
-  //   justifyItems: "start",
-  //   alignItems: "start",
-  //   alignContent: "start",
-  // },
+
   span: {
     textAlign: "left",
     paddingLeft: "15px",

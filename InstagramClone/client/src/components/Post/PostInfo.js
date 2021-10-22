@@ -7,7 +7,7 @@ const style = {
   },
 };
 const PostInfo = ({ icon }) => {
-  const displayIcon = `${icon}`;
+  const displayIcon = `${icon} fa-2x`;
 
   return <i style={style.image} className={displayIcon} />;
 };

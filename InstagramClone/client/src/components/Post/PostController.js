@@ -9,7 +9,7 @@ import PostAddComment from "./PostAddComment";
 
 import "../../css/Posts.css";
 
-const Posts = () => {
+const PostController = () => {
   return (
     <div className='post-container'>
       <div className='post-header'>
@@ -29,18 +29,18 @@ const Posts = () => {
       </div>
 
       <div className='post-bookmark'>
-        <PostInfo icon={"fas fa-bookmark"} />
+        <PostInfo icon={"far fa-bookmark"} />
       </div>
 
-      <div className='post-views'>
+      <div className='footer post-views'>
         <PostFooter />
       </div>
 
-      <div className='post-caption'>
+      <div className='footer post-caption'>
         <PostFooter />
       </div>
 
-      <div className='post-comments'>
+      <div className='footer post-comments'>
         <PostFooter />
       </div>
 
@@ -48,7 +48,7 @@ const Posts = () => {
         <PostInfo icon='far fa-heart' />
       </div>
 
-      <div className='post-time'>
+      <div className='footer post-time'>
         <PostFooter />
       </div>
 
@@ -58,6 +58,6 @@ const Posts = () => {
     </div>
   );
 };
-export default Posts;
+export default PostController;
 
 // views, caption, comments, time

@@ -7,7 +7,7 @@
   margin: auto;
   display:grid;
   grid-template-columns: 5fr 1fr;
-  grid-template-rows: 50px 480px auto;
+  grid-template-rows: 50px 480px 45px;
   grid-template-areas: 
   "header info" 
   "image image" 
@@ -21,29 +21,28 @@
 
 .post-header{
   grid-area: header;
-  background-color:white;
 }
 .post-info{
   grid-area: info;
-  background-color:white;
   display: flex;
   align-items: center;
 } 
 .post-image{
   grid-area: image;
-  background-color:blue;
+  background-color:red;
 }
 .post-engage{
   grid-area: engage;
-  background-color: purple;
 }
 .post-bookmark{
   grid-area: bookmark;
-  background-color: yellow;
+
+  display: flex;
+  align-items: center;
 }
 .post-views{
   grid-area: views;
-  background-color: blue;
+  background-color:red;
 }
 .post-caption{
   grid-area: caption;
@@ -55,20 +54,15 @@
 }
 .post-likes{
   grid-area: likes;
-  background-color: yellow;
+  background-color:white;
+  display: flex;
+  align-items: center;
 }
 .post-time{
   grid-area: time;
-  background-color: blue;
+  background-color: yellow;
 }
 .post-addComment{
   grid-area: addComment;
   background-color: purple;
 }
-/* 
-.left{
-  text-align: Top;
-} */
-
-
- 
