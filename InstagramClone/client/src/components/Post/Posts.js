@@ -3,12 +3,8 @@ import PostHeader from "./PostHeader";
 import PostInfo from "./PostInfo";
 import PostImage from "./PostImage";
 import PostEngage from "./PostEngage.js";
-import PostBookmark from "./PostBookmark.js";
-import PostViews from "./PostViews";
-import PostCaption from "./PostCaption";
 import PostComments from "./PostComments";
-import PostLikes from "./PostLikes";
-import PostTime from "./PostTime";
+import PostFooter from "./PostFooter";
 import PostAddComment from "./PostAddComment";
 
 import "../../css/Posts.css";
@@ -33,27 +29,27 @@ const Posts = () => {
       </div>
 
       <div className='post-bookmark'>
-        <PostBookmark />
+        <PostInfo />
       </div>
 
-      <div className='post-view-views'>
-        <PostViews />
+      <div className='post-views'>
+        <PostFooter />
       </div>
 
-      <div className='post-Caption'>
-        <PostCaption />
+      <div className='post-caption'>
+        <PostFooter />
       </div>
 
       <div className='post-comments'>
-        <PostComments />
+        <PostFooter />
       </div>
 
-      <div className='post-like'>
-        <PostLikes />
+      <div className='post-likes'>
+        <PostInfo />
       </div>
 
       <div className='post-time'>
-        <PostTime />
+        <PostFooter />
       </div>
 
       <div className='post-addComment'>
@@ -63,3 +59,5 @@ const Posts = () => {
   );
 };
 export default Posts;
+
+// views, caption, comments, time

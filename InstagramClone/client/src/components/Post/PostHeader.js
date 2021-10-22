@@ -1,17 +1,24 @@
 import React from "react";
 import faker from "faker";
+import "../../css/Posts.css";
 
 const styles = {
-  circle: { borderRadius: "20px", maxWidth: "40px", maxHeight: "40px" },
+  container: { display: "grid", gridTemplateColumns: "50px 100px" },
+  circle: {
+    maxWidth: "30px",
+    maxHeight: "30px",
+    borderRadius: "15px",
+  },
+  userName: {
+    fontWeight: "900",
+  },
 };
 
 const PostHeader = () => {
   return (
-    <div className='container post-header'>
-      <div className='userPic left'>
-        <img style={styles.circle} alt='image' src={faker.image.avatar()} />
-        <p className='right'>{faker.name.findName()}</p>
-      </div>
+    <div style={styles.container}>
+      <img style={styles.circle} alt='user' src={faker.image.avatar()} />
+      <span style={styles.userName}>{faker.name.findName()}</span>
     </div>
   );
 };

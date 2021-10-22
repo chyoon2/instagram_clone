@@ -5,11 +5,9 @@
   border-radius: 3px;
   background-color:white;
   margin: auto;
-  max-height: 118px;
-  min-height: 118px;
   display:grid;
-  grid-template-columns: 3fr 1fr;
-  grid-auto-rows: 64px, 480px, 64px, 32px 32px, auto, 32px 64px;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas: 
   "header info" 
   "image image" 
@@ -20,17 +18,18 @@
   "time time"
   "addComment addComment";
 } 
+
 .post-header{
   grid-area: header;
   background-color: red;
 }
 .post-info{
   grid-area: info;
-  background-color:green;
+  background-color:yellow;
 } 
 .post-image{
   grid-area: image;
-  background-color:hotpink;
+  background-color:blue;
 }
 .post-engage{
   grid-area: engage;
@@ -53,28 +52,21 @@
   background-color:  darkgray;
 }
 .post-likes{
-grid-area: likes;
-background-color: yellow;
+  grid-area: likes;
+  background-color: yellow;
 }
 .post-time{
-grid-area: time;
-background-color: blue;
+  grid-area: time;
+  background-color: blue;
 }
 .post-addComment{
-grid-area: addComment;
-background-color: purple;
+  grid-area: addComment;
+  background-color: purple;
 }
-
+/* 
 .left{
-  text-align: left;
-}
-.right{
-  text-align: right;
-  justify-content: right;
-  justify-items: right;
-  align-items: right;
-  align-content: right;
-}
-.name{
-  float: right;
-}
+  text-align: Top;
+} */
+
+
+ 
