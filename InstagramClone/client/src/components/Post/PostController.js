@@ -6,7 +6,6 @@ import PostEngage from "./PostEngage.js";
 import PostComments from "./PostComments";
 import PostFooter from "./PostFooter";
 import PostAddComment from "./PostAddComment";
-
 import "../../css/Posts.css";
 
 const PostController = () => {
@@ -33,15 +32,15 @@ const PostController = () => {
       </div>
 
       <div className='footer post-views'>
-        <PostFooter />
+        <PostFooter type={"views"} />
       </div>
 
       <div className='footer post-caption'>
-        <PostFooter />
+        <PostFooter type={"caption"} />
       </div>
 
       <div className='footer post-comments'>
-        <PostFooter />
+        <PostFooter type={"comments"} />
       </div>
 
       <div className='post-likes'>
@@ -49,7 +48,7 @@ const PostController = () => {
       </div>
 
       <div className='footer post-time'>
-        <PostFooter />
+        <PostFooter type={"time"} />
       </div>
 
       <div className='post-addComment'>
