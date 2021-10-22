@@ -46,11 +46,9 @@
 }
 .post-caption{
   grid-area: caption;
-  background-color: hotpink;
 }
 .post-comments{
   grid-area: comments;
-  background-color:  darkgray;
 }
 .post-likes{
   grid-area: likes;
@@ -60,9 +58,8 @@
 }
 .post-time{
   grid-area: time;
-  background-color: yellow;
 }
 .post-addComment{
   grid-area: addComment;
-  background-color: purple;
+  background-color: white;
 }

@@ -6,9 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - header media query sizes.
 - make header component responsive to browser window > 400px so search bar dissapears.
+  -refactor controller and the multople post footer componenets.
 - further seperate business logic from ui logic. specifically in FooterPost
 - replace hardcoded data for
 - refactor GRID LAYOUT for entire website. right now header is different grid from body of the website.
+- fakerJS api in carousel.
 
 ## Specifications
 

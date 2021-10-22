@@ -8,7 +8,7 @@ import PostFooter from "./PostFooter";
 import PostAddComment from "./PostAddComment";
 import "../../css/Posts.css";
 
-const PostController = ({ data }) => {
+const PostController = ({ data, commentData }) => {
   return (
     <div className='post-container'>
       <div className='post-header'>
@@ -36,7 +36,7 @@ const PostController = ({ data }) => {
       </div>
 
       <div className='footer post-caption'>
-        <PostFooter type={"caption"} />
+        <PostFooter type={"caption"} data={data} />
       </div>
 
       <div className='footer post-comments'>
