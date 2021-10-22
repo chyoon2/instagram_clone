@@ -17,7 +17,7 @@ const Posts = () => {
       </div>
 
       <div className='post-info'>
-        <PostInfo />
+        <PostInfo icon={"fas fa-ellipsis-h"} />
       </div>
 
       <div className='post-image'>
@@ -29,7 +29,7 @@ const Posts = () => {
       </div>
 
       <div className='post-bookmark'>
-        <PostInfo />
+        <PostInfo icon={"fas fa-bookmark"} />
       </div>
 
       <div className='post-views'>
@@ -45,7 +45,7 @@ const Posts = () => {
       </div>
 
       <div className='post-likes'>
-        <PostInfo />
+        <PostInfo icon='far fa-heart' />
       </div>
 
       <div className='post-time'>

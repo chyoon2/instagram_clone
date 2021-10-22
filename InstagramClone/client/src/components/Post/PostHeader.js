@@ -3,22 +3,42 @@ import faker from "faker";
 import "../../css/Posts.css";
 
 const styles = {
-  container: { display: "grid", gridTemplateColumns: "50px 100px" },
+  container: {
+    display: "grid",
+    gridTemplateColumns: "35px 200px",
+  },
   circle: {
-    maxWidth: "30px",
+    margin: "10px",
+    maxWidth: "35px",
     maxHeight: "30px",
     borderRadius: "15px",
   },
   userName: {
     fontWeight: "900",
+    paddingTop: "15px",
+    paddingRight: "500px",
+  },
+  // userDiv: {
+  //   justifyContent: "left",
+  //   justifyItems: "start",
+  //   alignItems: "start",
+  //   alignContent: "start",
+  // },
+  span: {
+    textAlign: "left",
+    paddingLeft: "15px",
   },
 };
 
 const PostHeader = () => {
   return (
     <div style={styles.container}>
-      <img style={styles.circle} alt='user' src={faker.image.avatar()} />
-      <span style={styles.userName}>{faker.name.findName()}</span>
+      <div>
+        <img style={styles.circle} alt='user' src={faker.image.avatar()} />
+      </div>
+      <div style={styles.userName}>
+        <span style={styles.span}>{faker.name.firstName()}</span>
+      </div>
     </div>
   );
 };
