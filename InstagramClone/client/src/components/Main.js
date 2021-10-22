@@ -8,6 +8,8 @@ const Main = () => {
       <div className='item-stories'></div>
       <div className='item-posts'>
         <PostController />
+        <PostController />
+        <PostController />
       </div>
     </div>
   );
