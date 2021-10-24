@@ -4,7 +4,7 @@
   border-style: solid; 
   border-radius: 3px;
   background-color:white;
-  margin: auto;
+  /* margin-Left: 50px; */
   display:grid;
   grid-template-columns: 5fr 1fr;
   grid-template-rows: 50px 480px 45px auto auto auto auto 50px;

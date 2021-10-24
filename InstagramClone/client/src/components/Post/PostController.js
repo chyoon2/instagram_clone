@@ -5,7 +5,6 @@ import PostImage from "./PostImage";
 import PostEngage from "./PostEngage.js";
 import PostAddComment from "./PostAddComment";
 import PostFooter from "./PostFooter";
-import "../../css/Posts.css";
 
 const PostController = ({ data, commentData }) => {
   return (
@@ -57,5 +56,3 @@ const PostController = ({ data, commentData }) => {
   );
 };
 export default PostController;
-
-// views, caption, comments, time

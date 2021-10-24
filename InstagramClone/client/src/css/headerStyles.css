@@ -9,6 +9,10 @@
     gap: 30px; 
   }
   .Container{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color:white;
     border-color:#d6d6d6	;
     border-width: .5px;
     border-style: solid;
@@ -74,6 +78,10 @@
     gap:200px;
   }
   .Container{
+    background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     border-color:#d6d6d6	;
     border-width: .5px;
     border-style: solid;

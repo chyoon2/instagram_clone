@@ -15,7 +15,6 @@ const styles = {
     alignItems: "center",
     fontWeight: "bolder",
     fontSize: "17",
-    opacity: " 0.5",
   },
   iconDiv: {
     display: "flex",
@@ -23,7 +22,6 @@ const styles = {
     alignItems: "center",
     color: "light gray",
     marginLeft: "15px",
-    opacity: " 0.5",
   },
 
   inputDiv: {

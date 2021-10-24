@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import CarouselItems from "./CarouselItems";
+
 import "../css/Carousel.css";
 
 const responsive = {
