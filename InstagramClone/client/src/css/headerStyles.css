@@ -1,5 +1,5 @@
 /* WHEN SMALL */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1200px) {
   .grid-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -68,7 +68,7 @@
   input.header::placeholder { color:rgb(190, 184, 184); transition:color 0.3s ease; }
 }
 /* WHEN BIG */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1200px) {
   .grid-container{
     grid-template-columns: auto auto auto;
     text-align: center;

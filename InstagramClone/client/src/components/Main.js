@@ -1,65 +1,36 @@
 import React from "react";
 import PostController from "./Post/PostController";
 import "../css/MainStyles.css";
+import "../css/Sidebar.css";
 import CarouselWork from "./CarouselWork";
 import { userData } from "../data";
 import Sidebar from "./Sidebar";
-import { UseMediaQuery } from "../UseMediaQuery";
+import useBreakpoint from "../useBreakpoint";
 
-// const isPageWide = UseMediaQuery("min-width: 1200px");
-// // const renderSidebar = () => {
-// //   console.log("console sidebar");
-// //   if (isPageWide) {
-// //     console.log("page is wide = true");
-// //     return <Sidebar />;
-// //   } else {
-// //     return;
-// //   }
-// // };
+const queries = {
+  sm: "(max-width: 1200px)",
+};
 
-// const Main = () => {
-//   const isPageWide = UseMediaQuery("min-width: 1200px");
-//   if (isPageWide) {
-//     console.log("page is wide = true");
-//     return (
-//       <div className='main-container'>
-//         <CarouselWork />
-//         <Sidebar />
-//         <div className='item-posts'>{renderPostController()}</div>
-//       </div>
-//     );
-//   } else {
-//     return (
-//       <div className='main-container'>
-//         <CarouselWork />
-//         {renderSidebar()}
-//         <div className='item-posts'>{renderPostController()}</div>
-//       </div>
-//     );
-//   }
-// };
+const renderPostController = () => {
+  const displayData = userData.map((key) => {
+    return <PostController data={key} />;
+  });
+  return displayData;
+};
 
-// export default Main;
+const Main = () => {
+  const { sm } = useBreakpoint(queries);
+  const sam = sm === true ? true : false;
 
-// const renderPostController = () => {
-//   const displayData = userData.map((key) => {
-//     return <PostController data={key} />;
-//   });
-//   return displayData;
-// };
+  return (
+    <div className='main-container'>
+      <CarouselWork />
 
-class Main extends Component {
-  constructor(props) {
-    super(props);
-  }
+      {!sm && <Sidebar />}
 
-  componentDidMount() {}
-
-  componentDidUpdate(prevProps, prevState) {}
-
-  render() {
-    return <div></div>;
-  }
-}
+      <div className='item-posts'>{renderPostController()}</div>
+    </div>
+  );
+};
 
 export default Main;
