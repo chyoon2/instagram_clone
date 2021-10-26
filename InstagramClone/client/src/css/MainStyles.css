@@ -1,4 +1,4 @@
-.item-stories{
+/* .item-stories{
   border-color:#d6d6d6	;
   border-width: .5px;
   border-style: solid;
@@ -6,17 +6,10 @@
   text-align: center;
   justify-content: center;
   justify-items: center;
-}
-.item-posts{
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  min-width: 643px;
-}
+} */
 
- /* //when small */
- 
+/* //when small */
+
 @media only screen and (max-width: 1020px) {
   .main-container{
     display: grid;
@@ -26,17 +19,47 @@
     justify-content: center;
     justify-items: center;
   }
+  .item-posts{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    min-width: 643px;
+  }
 } 
   /* when big */
  @media only screen and (min-width: 1020px) {
   .main-container{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 13fr 10fr;
     text-align: center;
     justify-content: center;
-    justify-items: center; 
+    justify-items: center;
+    justify-items: right;
+    column-gap: 40px;
+    margin-right: auto;
+    margin-left: 40px; 
     grid-template-areas:
     "carousel sidebar"
     "post sidebar"
+  } 
+  .item-posts{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-self: right;
+    min-width: 643px;
+  }
+  .carsel{
+    grid-area: carousel;
+    border-color:#d6d6d6	;
+    border-width: 1px;
+    border-style: solid; 
+    border-radius: 3px;
+    background-color:white;
+    width:300px;
+    max-height: 118px;
+    min-height: 118px;
+    margin-top: 30px;
   } 
 }

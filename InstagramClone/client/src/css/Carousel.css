@@ -5,12 +5,10 @@
   border-style: solid; 
   border-radius: 3px;
   background-color:white;
-  /* margin-Left: 50px; */
   width: 645px;
   max-height: 118px;
   min-height: 118px;
   margin-top: 30px;
-  
 } 
 .avatarCard{
   margin: auto;

@@ -4,6 +4,56 @@
   border-color:black;
   border-width: .5px;
   border-style: solid;
-  height: 900px;
-  width: 200px;
+  width: 300px;
+  height: 1000px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 30px 50px 50px 50px 50px 50px ;
+  grid-template-areas:
+  "activeUser activeUser button"
+  "text text what"
+  "suggestedUser0 suggestedUser0 suggestedUser0"
+  "suggestedUser1 suggestedUser1 suggestedUser1"
+  "suggestedUser2 suggestedUser2 suggestedUser2"
+  "suggestedUser3 suggestedUser3 suggestedUser3"
+  "suggestedUser4 suggestedUser4 suggestedUser4"
+}
+
+.activeUser {
+  grid-area: activeUser;
+  height: 100px;
+
+}
+.button {
+  grid-area: button;
+  height: 100px;
+  display: flex;
+  justify-content: right;
+}
+.what {
+  grid-area: what; 
+  display: flex;
+  justify-content: right;
+}
+.text {
+  grid-area: text;
+  height: 25px;
+  align-self:flex-start;
+  justify-self: start;
+} 
+.suggestedUser0 {
+  grid-area: suggestedUser0;
+}
+.suggestedUser1 {
+  grid-area: suggestedUser1;
+}
+.suggestedUser2 {
+  grid-area: suggestedUser2;
+}
+.suggestedUser3 {
+  grid-area: suggestedUser3;
+}
+.suggestedUser4 {
+  grid-area: suggestedUser4;
 }
