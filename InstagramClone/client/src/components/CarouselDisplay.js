@@ -14,12 +14,12 @@ const responsive = {
     items: 7,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1020 },
     items: 7,
     slidesToSlide: 3, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1020, min: 464 },
     items: 7,
     slidesToSlide: 2, // optional, default to 1.
   },
