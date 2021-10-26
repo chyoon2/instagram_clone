@@ -41,21 +41,36 @@ const styles = {
   },
 };
 
-const PostHeader = ({ data, pic }) => {
+const PostHeader = ({ data, pic, suggestions }) => {
   const harryStyles = pic === "sidebar" ? styles.userCircle : styles.circle;
   const spanStyles = pic === "sidebar" ? styles.userSpan : styles.span;
   const user = pic === "sidebar" ? styles.userNameSidebar : styles.userName;
 
-  return (
-    <div style={styles.container}>
-      <div>
-        <img style={harryStyles} alt='user' src={data.avatar} />
+  if (!suggestions) {
+    console.log("not suggesty");
+    return (
+      <div style={styles.container}>
+        <div>
+          <img style={harryStyles} alt='user' src={data.avatar} />
+        </div>
+        <div style={user}>
+          <span style={spanStyles}>{data.name}</span>
+        </div>
       </div>
-      <div style={user}>
-        <span style={spanStyles}>{data.name}</span>
+    );
+  } else {
+    console.log(" sugges");
+    return (
+      <div style={styles.container}>
+        <div>
+          <img style={harryStyles} alt='user' src={faker.image.avatar()} />
+        </div>
+        <div style={user}>
+          <span style={spanStyles}>{faker.name.findName()}</span>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default PostHeader;
