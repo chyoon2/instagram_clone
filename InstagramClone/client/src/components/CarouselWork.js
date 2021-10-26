@@ -5,6 +5,7 @@ import CarouselDisplay from "./CarouselDisplay";
 
 const CarouselWork = () => {
   const FakerArray = data.map((key) => ({
+    key: key,
     id: key.id,
     name: faker.name.firstName(),
     ava: faker.image.avatar(),
