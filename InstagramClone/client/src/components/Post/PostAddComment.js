@@ -35,14 +35,14 @@ const PostAddComment = () => {
   return (
     <div style={styles.container}>
       <div style={styles.iconDiv}>
-        <i class='far fa-smile fa-2x'></i>
+        <i className='far fa-smile fa-2x'></i>
       </div>
 
       <div style={styles.inputDiv}>
         <input
           type='text'
           className='input comment'
-          placeHolder='Add a comment'
+          placeholder='Add a comment'
         />
       </div>
 

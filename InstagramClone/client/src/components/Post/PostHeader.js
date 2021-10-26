@@ -13,6 +13,7 @@ const styles = {
     maxHeight: "30px",
     borderRadius: "15px",
   },
+
   userName: {
     fontWeight: "900",
     paddingTop: "15px",
@@ -26,7 +27,7 @@ const styles = {
   userNameSidebar: {
     fontWeight: "900",
     fontSize: "17px",
-    paddingTop: "40px",
+    paddingTop: "35px",
     justifySelf: "left",
   },
   userSpan: {
@@ -35,19 +36,18 @@ const styles = {
   },
   userCircle: {
     margin: "10px",
-    marginTop: "22px",
+    marginTop: "20px",
     borderRadius: "30px",
     maxHeight: "56px",
   },
 };
 
-const PostHeader = ({ data, pic, suggestions }) => {
-  const harryStyles = pic === "sidebar" ? styles.userCircle : styles.circle;
-  const spanStyles = pic === "sidebar" ? styles.userSpan : styles.span;
-  const user = pic === "sidebar" ? styles.userNameSidebar : styles.userName;
+const PostHeader = ({ data, suggestions }) => {
+  const harryStyles = suggestions === false ? styles.userCircle : styles.circle;
+  const spanStyles = suggestions === false ? styles.userSpan : styles.span;
+  const user = suggestions === false ? styles.userNameSidebar : styles.userName;
 
   if (!suggestions) {
-    console.log("not suggesty");
     return (
       <div style={styles.container}>
         <div>
@@ -59,7 +59,6 @@ const PostHeader = ({ data, pic, suggestions }) => {
       </div>
     );
   } else {
-    console.log(" sugges");
     return (
       <div style={styles.container}>
         <div>

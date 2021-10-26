@@ -50,13 +50,12 @@ const PostFooter = ({ type, data }) => {
           </div>
         );
       default:
-        console.log("dfook");
         break;
     }
   }
   return (
     <div style={{ float: "left" }}>
-      <p
+      <div
         style={{
           float: "left",
           paddingLeft: "10px",
@@ -64,7 +63,7 @@ const PostFooter = ({ type, data }) => {
           paddingBottom: "3px",
         }}>
         {renderContent(type)}
-      </p>
+      </div>
     </div>
   );
 };

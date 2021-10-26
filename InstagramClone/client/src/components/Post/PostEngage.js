@@ -18,13 +18,13 @@ const PostEngage = () => {
   return (
     <div style={styles.container}>
       <div style={styles.icons}>
-        <i class='far fa-heart fa-2x'></i>
+        <i className='far fa-heart fa-2x'></i>
       </div>
       <div style={styles.icons}>
-        <i class='far fa-comment fa-2x'></i>
+        <i className='far fa-comment fa-2x'></i>
       </div>
       <div style={styles.icons}>
-        <i class='far fa-paper-plane fa-2x'></i>
+        <i className='far fa-paper-plane fa-2x'></i>
       </div>
     </div>
   );

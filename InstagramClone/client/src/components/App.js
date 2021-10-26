@@ -1,14 +1,9 @@
 import React from "react";
-import Header from "./Header";
-import Main from "./Main";
+
+import MainFeed from "./MainFeed";
 
 const App = () => {
-  return (
-    <div className='container' style={{ backgroundColor: "#f9f9f9" }}>
-      <Header />
-      <Main />
-    </div>
-  );
+  return <MainFeed />;
 };
 
 export default App;

@@ -16,7 +16,6 @@ const Header = () => {
         <div className='grid-item logo'>
           <img style={styles.pic} src={igLogo} alt='Logo' />
         </div>
-
         <div className='grid-item search'>
           <input
             type='text'
@@ -32,17 +31,3 @@ const Header = () => {
   );
 };
 export default Header;
-
-// <Segment className='scales'>
-// <Grid columns={3}>
-//   <Grid.Column color={"red"}>
-//     <Image src={InstagramScriptLogo} size={"tiny"} />
-//   </Grid.Column>
-//   <Grid.Column textAlign='center'>
-//     <Input placeholder='Search...' />
-//   </Grid.Column>
-//   <Grid.Column textAlign='right'>
-//     <IconMenu />
-//   </Grid.Column>
-// </Grid>
-// </Segment>
