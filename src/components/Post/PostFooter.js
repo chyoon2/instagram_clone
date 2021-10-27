@@ -1,7 +1,6 @@
 import React from "react";
 import faker from "faker";
 import { timeArr } from "../../data";
-// import { commentData } from "../../data";
 
 const PostFooter = ({ type, data }) => {
   function getNum() {
@@ -69,7 +68,3 @@ const PostFooter = ({ type, data }) => {
 };
 
 export default PostFooter;
-
-// USER NAME(SAME AS ABOVE) : description
-// COMMENT: USER : description
-//tIME
