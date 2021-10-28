@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../css/Posts.css";
+import { createComment } from "../../actions";
+import { connect } from "react-redux";
 
 const styles = {
   container: {
@@ -31,7 +33,15 @@ const styles = {
   },
 };
 
-const PostAddComment = () => {
+const PostAddComment = (prop) => {
+  const [term, setTerm] = useState("");
+
+  const onCommentSubmit = (e) => {
+    e.preventDefault();
+    prop.createComment({ placing: 0, description: term });
+    setTerm("");
+  };
+
   return (
     <div style={styles.container}>
       <div style={styles.iconDiv}>
@@ -39,16 +49,22 @@ const PostAddComment = () => {
       </div>
 
       <div style={styles.inputDiv}>
-        <input
-          type='text'
-          className='input comment'
-          placeholder='Add a comment'
-        />
+        <form onSubmit={onCommentSubmit}>
+          <input
+            type='text'
+            className='input comment'
+            value={term}
+            placeholder='Add a comment'
+            onChange={(e) => setTerm(e.target.value)}
+          />
+        </form>
       </div>
-
       <div style={styles.buttonDiv}>POST</div>
     </div>
   );
 };
-
-export default PostAddComment;
+const mapStateToProps = (state) => {
+  console.log(state);
+  return { songs: state };
+};
+export default connect(mapStateToProps, { createComment })(PostAddComment);

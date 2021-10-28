@@ -6,63 +6,28 @@
   border-radius: 3px;
   background-color:white;
   display:grid;
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: 50px 480px 45px auto auto auto auto 50px;
-  grid-template-areas: 
-  "header info" 
-  "image image" 
-  "engage bookmark"
-  "views views"
-  "caption caption"
-  "comments likes"
-  "time time"
-  "addComment addComment";
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 50px 480px 45px auto auto auto auto 50px; */
 } 
-
-.post-header{
-  grid-area: header;
-}
 .post-info{
-  grid-area: info;
   display: flex;
   align-items: center;
 } 
 .post-image{
-  grid-area: image;
   background-color:white;
 }
-.post-engage{
-  grid-area: engage;
-}
 .post-bookmark{
-  grid-area: bookmark;
-
   display: flex;
   align-items: center;
 }
 .post-views{
-  grid-area: views;
   background-color:white;
 }
-.post-caption{
-  grid-area: caption;
-}
-.post-comments{
-  grid-area: comments;
-}
 .post-likes{
-  grid-area: likes;
   background-color:white;
   display: flex;
   align-items: center;
 }
-.post-time{
-  grid-area: time;
-}
-.post-addComment{
-  grid-area: addComment;
-}
-
 .input.comment{
   border-color:	white	;
   border-style: solid;

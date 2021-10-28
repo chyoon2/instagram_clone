@@ -5,6 +5,7 @@ import PostImage from "./PostImage";
 import PostEngage from "./PostEngage.js";
 import PostAddComment from "./PostAddComment";
 import PostFooter from "./PostFooter";
+import "../../css/Posts.css";
 
 const PostController = ({ data, commentData }) => {
   return (
@@ -13,26 +14,16 @@ const PostController = ({ data, commentData }) => {
         <PostHeader data={data} />
       </div>
 
-      <div className='post-info'>
-        <PostInfo icon={"fas fa-ellipsis-h"} />
-      </div>
-
       <div className='post-image'>
         <PostImage data={data} />
       </div>
-
       <div className='post-engage'>
         <PostEngage />
-      </div>
-
-      <div className='post-bookmark'>
-        <PostInfo icon={"far fa-bookmark"} size={"fa-2x"} />
       </div>
 
       <div className='footer post-views'>
         <PostFooter type={"views"} />
       </div>
-
       <div className='footer post-caption'>
         <PostFooter type={"caption"} data={data} />
       </div>
@@ -41,9 +32,11 @@ const PostController = ({ data, commentData }) => {
         <PostFooter type={"comments"} />
       </div>
 
+      {/* 
       <div className='post-likes'>
         <PostInfo icon='far fa-heart' />
       </div>
+    */}
 
       <div className='footer post-time'>
         <PostFooter type={"time"} />

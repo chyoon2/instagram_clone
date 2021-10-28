@@ -2,9 +2,9 @@ import React from "react";
 import PostController from "./Post/PostController";
 import "../css/MainStyles.css";
 import "../css/Sidebar.css";
-import CarouselWork from "./CarouselWork";
+import CarouselWork from "./Carousel/CarouselWork";
 import { userData } from "../data";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar/Sidebar";
 import useBreakpoint from "../useBreakpoint";
 
 const queries = {

@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import CarouselItems from "./CarouselItems";
 
-import "../css/Carousel.css";
+import "../../css/Carousel.css";
 
 const responsive = {
   superLargeDesktop: {

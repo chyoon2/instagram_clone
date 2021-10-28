@@ -1,8 +1,8 @@
 import React from "react";
-import PostHeader from "./Post/PostHeader";
-import { userData } from "../data";
+import PostHeader from "../Post/PostHeader";
+import { userData } from "../../data";
 import Button from "./Button";
-import "../css/Sidebar.css";
+import "../../css/Sidebar.css";
 
 const styles = {
   container: {

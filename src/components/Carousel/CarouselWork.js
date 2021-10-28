@@ -1,6 +1,6 @@
 import faker from "faker";
-import "../css/Carousel.css";
-import { data } from "../data";
+import "../../css/Carousel.css";
+import { data } from "../../data";
 import CarouselDisplay from "./CarouselDisplay";
 
 const CarouselWork = () => {

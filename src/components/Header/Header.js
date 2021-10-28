@@ -1,7 +1,7 @@
 import React from "react";
 import IconMenu from "./IconMenu";
-import igLogo from "../img/daoneten.png";
-import "../css/HeaderStyles.css";
+import igLogo from "../../img/daoneten.png";
+import "../../css/HeaderStyles.css";
 
 const styles = {
   pic: {

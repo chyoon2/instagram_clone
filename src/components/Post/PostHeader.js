@@ -1,11 +1,16 @@
 import React from "react";
 import faker from "faker";
 import "../../css/Posts.css";
+import PostInfo from "./PostInfo";
+
+// <div className='post-info'>
+//       <PostInfo icon={"fas fa-ellipsis-h"} />
+//     </div>
 
 const styles = {
   container: {
     display: "grid",
-    gridTemplateColumns: "35px 200px",
+    gridTemplateColumns: "35px 170px 30px",
   },
   circle: {
     margin: "10px",

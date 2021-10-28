@@ -20,6 +20,10 @@ const PostFooter = ({ type, data }) => {
     return timeArr[num];
   }
 
+  function renderUserAddedComments() {
+    return;
+  }
+
   function renderContent(type) {
     switch (type) {
       case "views":
@@ -45,6 +49,14 @@ const PostFooter = ({ type, data }) => {
             <span style={{ fontWeight: "bolder" }}>
               {faker.name.firstName()}
             </span>
+            <span style={{ paddingLeft: "5px" }}>{faker.lorem.words()}</span>
+          </div>
+        );
+      case "userAddedComment":
+        renderUserAddedComments();
+        return (
+          <div>
+            <span style={{ fontWeight: "bolder" }}>MyFutureEmployer</span>
             <span style={{ paddingLeft: "5px" }}>{faker.lorem.words()}</span>
           </div>
         );

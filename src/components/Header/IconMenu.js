@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/IconMenuStyles.css";
+import "../../css/IconMenuStyles.css";
 import faker from "faker";
 
 const styles = {
