@@ -15,28 +15,17 @@ export const userData = [
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state = userData, action) => {
   if (action.type === CREATE_COMMENT) {
-    return [
+    return {
       ...state,
-      [
+      [action.payload.place]: {
         ...state[action.payload.place],
         comments: [
           ...state[action.payload.place].comments,
           action.payload.desc,
         ],
-      ],
-    ];
+      },
+    };
   } else {
     return state;
   }
 };
-
-// return {
-//   ...state,
-//   [action.payload.place]: {
-//     ...state[action.payload.place],
-//     comments: [
-//       ...state[action.payload.place].comments,
-//       action.payload.desc,
-//     ],
-//   },
-// };
