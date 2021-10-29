@@ -34,8 +34,8 @@ const CarouselDisplay = ({ data }) => {
   return (
     <Carousel
       className='carsel'
-      swipeable={false}
-      draggable={false}
+      swipeable={true}
+      draggable={true}
       showDots={false}
       responsive={responsive}
       ssr={true} // means to render carousel on server-side.
