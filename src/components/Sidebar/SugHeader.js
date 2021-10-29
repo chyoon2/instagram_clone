@@ -1,8 +1,9 @@
 import React from "react";
 import PostHeader from "../Post/PostHeader";
-import { userData } from "../../data";
+// import { userData } from "../../data";
 import Button from "./Button";
 import "../../css/Sidebar.css";
+import { connect } from "react-redux";
 
 const styles = {
   container: {
@@ -13,14 +14,17 @@ const styles = {
   },
 };
 
-const sugHeader = ({ suggestions }) => {
+const sugHeader = ({ suggestions, userData }) => {
   const suggestionsProp = suggestions ? true : false;
 
   if (suggestions === false) {
     return (
       <div style={styles.container}>
         <div className='activeUser'>
-          <PostHeader data={userData[14]} suggestions={suggestionsProp} />
+          <PostHeader
+            data={userData.postData[14]}
+            suggestions={suggestionsProp}
+          />
         </div>
         <Button text={"Switch"} />
       </div>
@@ -29,12 +33,17 @@ const sugHeader = ({ suggestions }) => {
     return (
       <div style={styles.container}>
         <div className='activeUser'>
-          <PostHeader data={userData[14]} suggestions={suggestionsProp} />
+          <PostHeader
+            data={userData.postData[14]}
+            suggestions={suggestionsProp}
+          />
         </div>
         <Button style={styles.text} text={"Switch"} />
       </div>
     );
   }
 };
-
-export default sugHeader;
+const mapStateToProps = (state) => {
+  return { userData: state };
+};
+export default connect(mapStateToProps)(sugHeader);

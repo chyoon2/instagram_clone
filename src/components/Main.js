@@ -6,28 +6,33 @@ import CarouselWork from "./Carousel/CarouselWork";
 import { userData } from "../data";
 import Sidebar from "./Sidebar/Sidebar";
 import useBreakpoint from "../useBreakpoint";
+import { connect } from "react-redux";
 
 const queries = {
   sm: "(max-width: 1020px)",
 };
 
-const renderPostController = () => {
-  const displayData = userData.map((key) => {
-    return <PostController data={key} />;
+const renderPostController = ({ ohmyState }) => {
+  const way = Object.entries(ohmyState.postData);
+  const displayData = way.map((key) => {
+    return <PostController data={key[1]} />;
   });
   return displayData;
 };
 
-const Main = () => {
+const Main = (props) => {
   const { sm } = useBreakpoint(queries);
 
   return (
     <div className='main-container'>
       <CarouselWork />
       {!sm && <Sidebar />}
-      <div className='item-posts'>{renderPostController()}</div>
+      <div className='item-posts'>{renderPostController(props)}</div>
     </div>
   );
 };
 
-export default Main;
+const mapStateToProps = (state) => {
+  return { ohmyState: state };
+};
+export default connect(mapStateToProps)(Main);

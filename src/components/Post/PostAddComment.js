@@ -63,8 +63,5 @@ const PostAddComment = (prop) => {
     </div>
   );
 };
-const mapStateToProps = (state) => {
-  console.log(state);
-  return { songs: state };
-};
-export default connect(mapStateToProps, { createComment })(PostAddComment);
+
+export default connect(null, { createComment })(PostAddComment);
