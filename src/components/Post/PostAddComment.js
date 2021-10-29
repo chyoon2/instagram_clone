@@ -35,10 +35,9 @@ const styles = {
 
 const PostAddComment = (prop) => {
   const [term, setTerm] = useState("");
-
   const onCommentSubmit = (e) => {
     e.preventDefault();
-    prop.createComment({ placing: 0, description: term });
+    prop.createComment({ placing: prop.data, description: term });
     setTerm("");
   };
 
@@ -52,6 +51,7 @@ const PostAddComment = (prop) => {
         <form onSubmit={onCommentSubmit}>
           <input
             type='text'
+            maxlength='50'
             className='input comment'
             value={term}
             placeholder='Add a comment'
