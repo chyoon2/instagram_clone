@@ -51,7 +51,7 @@ const PostAddComment = (prop) => {
         <form onSubmit={onCommentSubmit}>
           <input
             type='text'
-            maxlength='50'
+            maxLength='50'
             className='input comment'
             value={term}
             placeholder='Add a comment'

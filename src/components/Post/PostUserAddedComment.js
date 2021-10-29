@@ -1,7 +1,6 @@
 import React from "react";
 
 const renderComments = (data) => {
-  console.log(data.comments);
   // const way = Object.entries(data.comments);
   // console.log(way);
   const way = data.comments;

@@ -1,2 +1,4 @@
 [build.environment]
   NODE_VERSION="14.15.0"
+
+process.env.CI= false
